@@ -1,0 +1,17 @@
+.header-title{
+
+    font-size: 40px;
+    font-family: "Helvetica", serif;
+
+
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 8px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 6px;
+    background: #B0E0E6;
+}
