@@ -40,7 +40,7 @@ function calculateDose()
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
     var ConvertedDose = getOpioidConversionFactor() * getDose();
-    var RoundedConvertedDose = ConvertedDose.toPrecision(2);
+    var RoundedConvertedDose = ConvertedDose.toPrecision(5);
 
     //display the result
     document.getElementById('ConvertedDose').innerHTML =
