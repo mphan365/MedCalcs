@@ -3,7 +3,10 @@
     font-size: 40px;
     font-family: "Helvetica", serif;
 
+}
 
+form{
+    padding-left: 20px;
 }
 
 input[type=text] {
