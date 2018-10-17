@@ -23,3 +23,10 @@ tr:nth-child(even) {
     border-radius: 10px;
     background: #F0F8FF;
 }
+
+#double-scroll {
+
+    width: 400px;
+
+
+}
