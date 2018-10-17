@@ -42,8 +42,14 @@ function calculateDose()
     var ConvertedDose = getOpioidConversionFactor() * getDose();
     var RoundedConvertedDose = ConvertedDose.toPrecision(5);
 
-    //display the result
-    document.getElementById('ConvertedDose').innerHTML =
-                                     "The input dose of oral opioid is equal to " +RoundedConvertedDose +"mg of morphine";
+    if(OMconversionfactor>0) {
+        //display the result
+        document.getElementById('ConvertedDose').innerHTML =
+                                         "The input dose of oral opioid is equal to " + RoundedConvertedDose +"mg of morphine";
+    } else {
+        document.getElementById('ConvertedDose').innerHTML = "";
+    }
+
+
 
 }
