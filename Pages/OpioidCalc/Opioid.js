@@ -46,7 +46,7 @@ function calculateDose()
         //display the result
         document.getElementById('ConvertedDose').innerHTML =
                                          "The input dose of oral opioid is equal to " + RoundedConvertedDose +"mg of morphine";
-    } else {
+} else {
         document.getElementById('ConvertedDose').innerHTML = "";
     }
 
