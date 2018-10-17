@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Fluid Calculator </title>
+        <title> Medications </title>
         <link rel="shortcut icon" href="../../images/Calculator.ico">
 
         <!-- External Scripts -->
@@ -11,10 +11,13 @@
         <!-- Local Scripts -->
 
         <script src="../../global/global.js"></script>
+        <script src="Medications.js"></script>
 
 
         <!-- CSS -->
         <link rel="stylesheet" href="../../global/global.css"/>
+        <link rel="stylesheet" href="Medications.css"/>
+
 
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -45,7 +48,206 @@
                 <a href="../../Pages/Medications/Medications.html">Medications</a>
             </div>
             <div id="mainform">
-                <h1> Page Currently Under Construction </h1>
+                <h1> Common Medication Dosages </h1>
+                <input id="myInput" type="text" placeholder="Search..">
+                <table>
+                    <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Dose</th>
+                          <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                          <td>Buprenorphine</td>
+                          <td>5 to 10 mg/day topical</td>
+                          <td>AKA Norspan, change weekly</td>
+                        </tr>
+                        <tr>
+                          <td>Celecoxib</td>
+                          <td>200 mg PO BD</td>
+                          <td>AKA Celebrex, Dose reduce by 50% in liver dysfunction</td>
+                        </tr>
+                        <tr>
+                          <td>Fentanyl</td>
+                          <td>12 or 25 mcg/h patch changed every 3 days</td>
+                          <td>AKA Actiq</td>
+                        </tr>
+                        <tr>
+                          <td>Ibuprofen</td>
+                          <td>400mg PO TDS</td>
+                          <td>Avoid in people at risk of GI bleed/renal insult</td>
+                        </tr>
+                        <tr>
+                          <td>Ketorolac</td>
+                          <td>50-100mg IM stat</td>
+                          <td>Rarely written up regularly. Particularly good for musculoskeletal pain</td>
+                        </tr>
+                        <tr>
+                          <td>Meloxicam</td>
+                          <td>7.5 mg PO daily</td>
+                          <td>AKA Mobic, Avoid in the elderly, renal impairment and/or a history of gastrointestinal bleeding</td>
+                        </tr>
+                        <tr>
+                          <td>Morphine</td>
+                          <td>2.5–5 mg subcut or IV Q2H</td>
+                          <td>Can be unlimited in palliative setting</td>
+                        </tr>
+                        <tr>
+                          <td>Oxycodone IR</td>
+                          <td>5–10 mg PO Q4H (max 40 mg)</td>
+                          <td>AKA Endone, less for the elderly, can constipate</td>
+                        </tr>
+                        <tr>
+                          <td>Oxycodone/naloxone</td>
+                          <td>5/2.5 mg PO BD or <br/>10/5 mg PO BD or <br/> 20/10 mg PO BD</td>
+                          <td>AKA Targin, most start on 10/5 (or for under 50 kg, 5/2.5). Up or down titrate depending on breakthrough requirements </td>
+                        </tr>
+                        <tr>
+                          <td>Paracetamol</td>
+                          <td>1 g PO Q4H (or QID)</td>
+                          <td>AKA Panadol/Tylenol Reduce to 3 g/day or less in severe liver dysfunction</td>
+                        </tr>
+                        <tr>
+                          <td>Tramadol SR </td>
+                          <td>100 mg PO TDS</td>
+                          <td>aka Tramal, Usually started at lower doses (e.g. BD) and up-titrated if necessary</td>
+                        </tr>
+                        <tr>
+                          <td>Acyclovir</td>
+                          <td>200 mg PO 5 times daily (minor viral infection) <br/> 400–800 mg PO 5 times daily (shingles) <br/> 10–15 mg/kg IV Q8H (HSV encephalitis)</td>
+                          <td>AKA Zovirax, Also available topically for cold sores!</td>
+                        </tr>
+                        <tr>
+                          <td>Amoxicillin</td>
+                          <td>500 mg PO TDS</td>
+                          <td>AKA Amoxil</td>
+                        </tr>
+                        <tr>
+                          <td>Amoxicillin with clavulanic acid </td>
+                          <td>875/125 mg PO BD</td>
+                          <td>AKA Augmentin Duo Forte, usual course is 5 days only</td>
+                        </tr>
+                        <tr>
+                          <td>Ampicillin</td>
+                          <td>1 g IV QID</td>
+                          <td>AKA Ampicyn</td>
+                        </tr>
+                        <tr>
+                          <td>Azithromycin </td>
+                          <td>500 mg IV (or PO) daily</td>
+                          <td>AKA Zithromax</td>
+                        </tr>
+                        <tr>
+                          <td>Benzylpenicillin</td>
+                          <td>1.2 g IV QID (usual dose) <br/> 2.4 g IV QID (meningitis or IE dose)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>Cefaclor</td>
+                          <td>500 mg PO TDS</td>
+                          <td>AKA Keflor, Good respiratory cover</td>
+                        </tr>
+                        <tr>
+                          <td>Cefazolin</td>
+                          <td>500 mg IV TDS <br/> 1 g IV TDS (severe infections) <br/> 2 g IV TDS (endocarditis dose)</td>
+                          <td>Favoured by orthopods. Can be used up to QID, has been tolerated up to 12 g/day</td>
+                        </tr>
+                        <tr>
+                          <td>Ceftazidime</td>
+                          <td>1–2 g IV TDS</td>
+                          <td>Usually stepped down to ciprofloxacin</td>
+                        </tr>
+                        <tr>
+                          <td>Ceftriaxone</td>
+                          <td>1 g IV daily</td>
+                          <td>Does not cover LAME – Listeria, atypicals, Mycobacteria and Enterococcus. Usually stepped down to cephalexin</td>
+                        </tr>
+                        <tr>
+                          <td>Cephalexin</td>
+                          <td>500 mg PO QID</td>
+                          <td>AKA Keflex, If compliance due to time is an issue (e.g. busy people), 1 g BD is an acceptable alternative</td>
+                        </tr>
+                        <tr>
+                          <td>Chloramphenicol</td>
+                          <td>1–2 cm topical affected eye BD or <br/>2 drops topical each affected eye BD</td>
+                          <td>Comes in ointment or drops. The usual course is 5–7 days</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
             </div>
 
         </main>
