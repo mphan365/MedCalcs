@@ -157,6 +157,7 @@ a ,a:link, a:visited {
 
         font-size: 30px;
         font-family: "Helvetica", serif;
+        vertical-align: middle;
 
     }
 
