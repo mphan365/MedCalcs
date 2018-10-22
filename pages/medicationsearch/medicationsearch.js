@@ -6,7 +6,3 @@ $(document).ready(function(){
     });
   });
 });
-
-$(document).ready(function(){
-  $('#double-scroll').doubleScroll();
-});

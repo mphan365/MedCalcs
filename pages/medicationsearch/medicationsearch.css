@@ -18,7 +18,9 @@ tr:nth-child(even) {
 }
 
 thead {
-    background-color:  #80bfff;
+    background-color:  var(--quartiarycolor);
+    color: white;
+
 }
 
 #myInput {
@@ -26,9 +28,10 @@ thead {
     padding: 8px 8px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 1px solid black;
-    border-radius: 10px;
-    background: #F0F8FF;
+    border: 1px solid var(--secondarycolor);
+    border-radius: 5px;
+
+    background: var(--inputcolor);
 }
 
 #double-scroll {
