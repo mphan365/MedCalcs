@@ -5,7 +5,7 @@ OMconversionrates["None"]=0;
 OMconversionrates["Hydromorphone"]=0.2;
 OMconversionrates["Oxycodone"]=0.666;
 OMconversionrates["Codeine"]=8;
-OMconversionrates["Tapentadol"]=3;  
+OMconversionrates["Tapentadol"]=3;
 OMconversionrates["Tramadol"]=2;
 
 function getOpioidConversionFactor()
@@ -45,7 +45,7 @@ function calculateDose()
     if(OMconversionfactor>0) {
         //display the result
         document.getElementById('ConvertedDose').innerHTML =
-                                         "The input dose of oral opioid is equal to " + RoundedConvertedDose +"mg of morphine";
+                                         "The input dose of moprhine is equal to " + RoundedConvertedDose +"mg of alternate oral opioid";
 } else {
         document.getElementById('ConvertedDose').innerHTML = "";
     }
