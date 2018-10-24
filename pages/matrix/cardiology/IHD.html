@@ -158,46 +158,76 @@
                                 <a class="nav-link" href="../../medicationsearch/medicationsearch.html">Medications</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../calculatorindex.html">Calculators</a>
+                                <a class="nav-link" href="../../calculators/calculatorindex.html">Calculators</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <h3> Oral Opioid to Morphine Conversion </h3>
-            <br/>
-            <form onchange="calculateDose()" action="JavaScript: CalculateDose" id="Opioid-Morphine-convert">
-                <fieldset>
 
-                    <label> Select oral opioid to convert to Morphine</label>
-                    &nbsp
-                    <select class="form-control" id="OralOpioid" name='OralOpioid' >
+            <h2>Ischaemic Heart Disease</h2>
+            <em> Ischaemic Heart Disease can be broadly split into two groups - the Acute Coronary Syndromes and Stable Angina. </em>
 
-                        <option value="None">None</option>
-                        <option value="Hydromorphone"> Hydromorphone </option>
-                        <option value="Oxycodone"> Oxycodone </option>
-                        <option value="Codeine"> Codeine </option>
-                        <option value="Tapentadol"> Tapentadol </option>
-                        <option value="Tramadol"> Tramadol </option>
-                   </select>
+            <div class="line"></div>
 
-                   <br/>
+            <h4>Stable Angina </h4>
+                <strong>Definition:</strong>
+                <p>Retrosternal chest pain/discomfort lasting 10 minutes or less, that is resolved with rest, with the pattern
+                of symptoms not changing over the past month. It occurs when oxygen supply fails to meet cardiac demand. Oxygen
+                supply is usually affected by atheroscleoris of the coronary arteries. </p>
+                <strong>Aetiology:</strong>
+                <p> Usually a result of an atherosclerotic process. It can also be caused by anaemia, tachycardia </p>
+                <strong>Signs and Symptoms: </strong>
+                <ul>
+                    <li>Retrosternal chest pain</li>
+                    <li>Chest tightness</li>
+                    <li>Radiation up neck and/or to the jaw/down the left arm (+/- right)</li>
+                    <li>Aggravated by exertion</li>
+                    <li>Alleviated by rest and nitrates</li>
+                </ul>
+                <strong>Investigations: </strong>
+                <p>Investigate other causes of chest pain before making a diagnosis of stable angina. In particular, consider
+                    anaemia valvular heart disease, and acute coronary syndrome </p>
+                <strong>Management: </strong>
+                <p>Management is aimed at relief of symptoms through alleviation of anginal episode severity and the prevention of future
+                episodes. </p>
+
+                <u>Treatment of Anginal Episodes</u>
+                    <ul>
+                        <li>Cease activity as soon as pain felt</li>
+                        <li>Glyceryl Trinitrate spray 400 microg sublingual, repeating every 5 mins up to 3 doses if tolerated OR</li>
+                        <li>Glyceryl Trinitrate tablet 300-600 microg sublingual, repeating every 5 mins up to 3 doses if tolerated </li>
+                    </ul>
+                <u>Preventing Angina </u>
+                    <ol>
+                        <li><b>First Line: Beta Blocker </b></li>
+                            <ul><li>Atenolol 25mg PO daily</li>
+                                <li> Metoprolol 25mg PO BD</li></ul>
+                                <br/>
+                        <li><b>Second Line: Nondihydropyridine Calcium Chanel Blocker</b> - <i> do not use with beta blocker </i></li>
+                            <ul><li>Diltiazem modified release 180mg PO daily</li>
+                                <li>Verapamil modified release 120mg PO daily</li> </ul>
+                                <br/>
+                        <li><b>Third Line: Dihydropyridine Calcium Channel Blocker</b> - <i>can be added to beta blocker</i></li>
+                            <ul><li>Amlodipine 2.5 mg PO daily</li>
+                                <li>Nifedipine modified release 30mg</li> </ul>
+                                <br/>
+                        <li><b>Fourth Line: Long Acting Nitrate </b> - <i>can be added to either a beta-blocker or Nondihydropyridine calcium channel blocker</i>
+                            <ul><li>Glyceryl Trinitrate 5 mg transdermally once daily</li>
+                                <li>Isosorbide Mononitrate modified-release 30 mg orally daily</li></ul>
+                                <br/>
+                        <li><b>Fifth Line: Nicorandil</b> - <i>Add to beta-blocker, diltiazem or verapamil therapy</i></li>
+                            <ul><li>Nicorandil 5 mg BD</li></ul>
+                    </ol>
+            <div class="line"></div>
+            <h3>Acute Coronary Syndromes</h3>
+            <h4>Unstable Angina</h4>
+            <strong>Definition: </strong>
+            <p>Irreversible anginal pain 
+            <h4>Myocardial Infarction</h4>
 
 
-                    <div class="form-group">
-                         <label> Alternate Opioid Dose</label>
-                         <input type="number" class="form-control" name="O-M-dose" placeholder="e.g. 300mg">
-                         <small class="form-text text-muted"> Dose of alternate opioid to convert in mg</small>
-                    </div>
 
-
-
-
-                  <br/>
-
-                   <div id="ConvertedDose"></div>
-                </fieldset>
-            </form>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
@@ -210,7 +240,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <!-- local script -->
     <script src="../../../global/global.js"></script>
-    <script src="OpioidToMorph.js"></script>
+
 </body>
 
 </html>
